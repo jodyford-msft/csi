@@ -9,7 +9,7 @@ resource dashboard 'Microsoft.Portal/dashboards@2015-08-01-preview' = {
     name: dashboard_name
 
     location: 'global'
-
+//dashboard elements start here
     properties: {
         lenses: {
             '0': {
@@ -56,6 +56,7 @@ resource dashboard 'Microsoft.Portal/dashboards@2015-08-01-preview' = {
                                     isOptional: true
                                 }
                             ]
+                            ///point to log analytics workspace
                             type: 'Extension/HubsExtension/PartType/MonitorChartPart'
                             settings: {
                                 content: {
